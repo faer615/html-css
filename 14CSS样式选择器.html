@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <title>定义CSS样式(CSS选择器)</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+           /* p{ color:red; font-size:28px; } */
+           .p { color:green; font-size:28px; }
+           .pp{ color:red; } 
+           #id { color:blue; } /* 优先级高 */
+           h1,h2,h3,h4,p, .div { color:red; font-size:36px } /* 组合选择器 */
+           a:link{ color:red; } /* 链接颜色 */
+           a:hover { color:green }/* 访问颜色 */
+           a:active {color:yellow} /* 选择链接颜色 */
+           a:visited { color:blue} /* 访问过颜色 */
+           
+        </style>
+    </head>
+    <body>  
+        <div  id="id" class="p">
+        <h1>IT学院CSS选择器</h1>
+        <h2>IT学院CSS选择器</h2>
+        <h3>IT学院CSS选择器</h3>
+        <h4>IT学院CSS选择器</h4>
+        </div>
+        <p class="pp">web学习</p>
+        <a href="http://www.baidu.com">百度首页</a><br/>
+         <a href="http://www.2345.com">2345首页</a><br/>
+         <a href="http://www.163.com">163首页</a><br/>
+    </body>
+</html>

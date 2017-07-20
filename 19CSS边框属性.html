@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+    <head>
+    <title>CSS边框属性</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            div {
+                width:60px;
+                height:60px;
+                float:left;
+                margin:15px  25px;  /* 上右下左 */
+                background-color:#ff0;
+            }
+            .div1 {
+                border-top-style:solid; /* 直线边框 */
+                border-width:thin; /* 细边框 */
+            }
+            .div2 {
+                border-bottom-style:dashed;  /* 虚线边框 */
+                border-width:medium; /* 中边框 */
+            }
+            .div3 {
+                border-left-style:dotted; /* 点状边框 */
+                border-width:thick; /* 粗边框 */
+            }
+            .div4 {
+                border-right-style:double; /* 双线边框 */
+                border-width:10px; /* 固定值边框 */
+            }
+            .div5,.div6,.div7,.div8 {
+                border-style:groove; /* 凸槽边框 */
+                border-width:30px;
+                width:80px;
+                height:80px;
+                background-color:none;
+                border-color:#fdd #6cc #e33 #996; /* 边框颜色 */
+                border: solid 2px #876
+                /* 简写格式： 边框 样式 宽度 颜色 */
+            } 
+            .div6 {
+                border-style:ridge; /* 垄状边框 */
+            }
+            .div7 {
+                border-style:inset；
+            }
+            .div8 {
+                border-style:outset；
+            }  
+        </style>
+    </head>
+        <body>
+            <div class="div1" >solid <p>顶部 直线边框</div>
+            <div class="div2" >dashed <p>底部虚线边框</div>
+            <div class="div3" >dotted <p>左边 点状边框</div>
+            <div class="div4" >double <p>右边 双线边框</div>
+            <div class="div5" >groove 凸槽边框</div>
+            <div class="div6" >ridge 垄状边框</div>
+            <div class="div7" >inset</div>
+            <div class="div8" >outset</div>
+        </body>
+</html>
